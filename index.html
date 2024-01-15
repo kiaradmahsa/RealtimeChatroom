@@ -48,6 +48,22 @@
     </form>
 </div>
 
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+<script>
+    // Initialize Firebase
+    const config = {
+        apiKey: "AIzaSyAopI3FEAQ0ZTptOWoGv48agAaXwDFgvjs",
+        authDomain: "modern-js-8b3f0.firebaseapp.com",
+        projectId: "modern-js-8b3f0",
+        storageBucket: "modern-js-8b3f0.appspot.com",
+        messagingSenderId: "694012615036",
+        appId: "1:694012615036:web:a417801805e620aef5ecf9",
+        measurementId: "G-G5LYH5RYT8"
+    };
+    firebase.initializeApp(config);
+    const db = firebase.firestore();
+</script>
 <script src="scripts/chat.js"></script>
 <script src="scripts/ui.js"></script>
 <script src="scripts/app.js"></script>

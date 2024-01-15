@@ -10,7 +10,7 @@
 }
 
 .btn:focus{
-    outline: none!important;
+    outline: none !important;
 }
 
 .input-group-text.btn-group-text{
