@@ -21,3 +21,12 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+
+.username{
+    font-weight: bold;
+}
+
+.time{
+    font-size: 0.7em;
+    color: #999;
+}

@@ -10,6 +10,7 @@ class Chatroom{
         this.chats = db.collection('chats');
         this.unsub;
     }
+    
     async addChat(message){
         //format a chat object
         const now = new Date();
@@ -52,16 +53,5 @@ class Chatroom{
     };
 }
 
-const chatroom = new Chatroom('general','shaun');
-chatroom.getChats((data)=>{
-    console.log(data);
-});
 
-setTimeout(()=>{
-    chatroom.updateRoom('gaming');
-    chatroom.updateName('yoshi');
-    chatroom.getChats((data) => {
-    console.log(data);
-    });
-    chatroom.addChat('hello');
-},3000);
+
